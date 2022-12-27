@@ -1,6 +1,6 @@
 <h1 align="center">lnk artifact</h1>
 
-<a href="https://youtu.be/LOv5SX6uaHM"> how to assemble TCP-Server-Client </a>
+<a href="https://youtu.be/LOv5SX6uaHM"> how to assemble lnk artifact </a>
 
 <p align="center">
 	<i>Toxic shortcuts in Windows: an old artifact, not forgotten by hackers, but partially forgotten by forensics..</i>
