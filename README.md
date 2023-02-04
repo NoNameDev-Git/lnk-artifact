@@ -55,3 +55,8 @@ Open image.lnk in any text editor Notepad++ in my case, version 7.8.6 (Open np++
 
 That's all, our lnk is ready, and everything that I think further is intuitive.
 Link to youtube: [www.youtube.com](https://youtu.be/LOv5SX6uaHM)
+
+### Support
+Telegram: @Official_Mr_Robot
+
+BTC: 1PoieWSbe1A7o2nAuXE37ncQHnGqxcdhJc
